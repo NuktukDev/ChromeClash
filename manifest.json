@@ -1,0 +1,37 @@
+{
+  "manifest_version": 3,
+  "name": "ChromeClash",
+  "description": "Reveal hidden data, and alert when raining on Clash.gg",
+  "version": "1.0",
+  "permissions": ["notifications"],
+  "host_permissions": ["*://*.clash.gg/*"],
+  "externally_connectable": {
+    "matches": ["https://*.clash.gg/*"]
+  },
+  "action": {
+    "default_icon": "images/icon.png"
+  },
+  "background": {
+    "service_worker": "./background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://clash.gg/*"],
+      "js": ["scripts/interceptRequests.js"],
+      "run_at": "document_start",
+      "world": "MAIN"
+    },
+    {
+      "matches": ["https://clash.gg/*"],
+      "js": ["debounce.js", "scripts/steamP2PListings.js"],
+      "run_at": "document_end",
+      "world": "ISOLATED"
+    }
+  ],
+  "icons": {
+    "16": "images/icon16.png",
+    "32": "images/icon32.png",
+    "48": "images/icon48.png",
+    "128": "images/icon128.png"
+  }
+}
