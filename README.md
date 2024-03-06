@@ -12,7 +12,7 @@ I also wanted to be alerted when a rain event started.
 - [ ] Add to Chrome Web Store (free)
 
 ## Setup
-1. Download this repository
+1. Download this repository, ensure when you unzip it the folder name is "ChromeClash"
 2. Click the puzzle piece in the top right section of your Chrome browser
 3. Click "Manage extensions"
 4. In the top right corner, click the "Developer mode" toggle
