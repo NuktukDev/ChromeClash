@@ -19,6 +19,7 @@ I also wanted to be alerted when a rain event started.
 5. On the left-hand side, click "Load unpacked"
 6. Find and select the folder for the repository you just downloaded
 7. Edit the files "background.js:5" and "scripts/interceptRequests.js:1" and update the constants "EXTENSION_KEY" with the now created extension id.
+8. Click the "refresh" icon for the ChromeClash extension.
 
 ##### If you did it right, you should see this on the extensions page:
 ![extension view](https://i.imgur.com/iNON2Y9.png)
