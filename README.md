@@ -9,7 +9,7 @@ I also wanted to be alerted when a rain event started.
 ## TO DO
 - [ ] Add a building tool such as Vite to minimize variable context leakage.
 - [ ] Implement the same float functionality for the WaxPeer withdrawl tab.
-- [ ] Add to Chrome Web Store (free)
+- [ ] Add to Chrome Web Store so we don't need to change EXTENSION_KEY constant
 
 ## Setup
 1. Download this repository, ensure when you unzip it the folder name is "ChromeClash"
@@ -18,7 +18,7 @@ I also wanted to be alerted when a rain event started.
 4. In the top right corner, click the "Developer mode" toggle
 5. On the left-hand side, click "Load unpacked"
 6. Find and select the folder for the repository you just downloaded
-7. Make sure it's on, and head over to clash.gg!
+7. Edit the files "background.js:5" and "scripts/interceptRequests.js:1" and update the constants "EXTENSION_KEY" with the now created extension id.
 
 ##### If you did it right, you should see this on the extensions page:
 ![extension view](https://i.imgur.com/iNON2Y9.png)
